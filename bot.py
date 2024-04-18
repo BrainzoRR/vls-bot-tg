@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Нажми', web_app=WebAppInfo(url='https://brainzorr.github.io/vls-bot-tg/telegram.html')))
+    markup.add(types.KeyboardButton('Нажми', web_app=WebAppInfo(url='https://brainzorr.github.io/vls-bot-tg/index.html')))
     await message.answer('Слава VLS', reply_markup=markup)
 
 executor.start_polling(dp)
